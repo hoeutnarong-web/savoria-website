@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SAVORIA - Discover delicious food, fresh ingredients and unforgettable flavors.">
+  <title>SAVORIA | Food & Restaurant</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../Js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="loader" id="loader">
+    <span class="loader-logo">SAVORIA<span>.</span></span>
+    <div class="loader-line"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">✳</span> SAVORIA<span class="logo-dot">.</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#menu">Menu</a></li>
+        <li><a class="nav-link" href="#story">Our Story</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#menu" class="btn btn-primary nav-cta">Explore Food <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow reveal">
+          <span class="eyebrow-line"></span> GOOD FOOD, GOOD LIFE
+        </span>
+
+        <h1 class="hero-title reveal">
+          Good food.<br>
+          <span>Great mood.</span>
+        </h1>
+
+        <p class="hero-description reveal">
+          Fresh ingredients, bold flavors, and beautiful moments
+          made with love. Welcome to your happy place.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#menu" class="btn btn-primary">
+            Explore Menu <span>↗</span>
+          </a>
+          <a href="#story" class="btn btn-outline">Our Story <span>→</span></a>
+        </div>
+
+        <div class="hero-note reveal">
+          <div class="avatar-stack">
+            <span>😊</span><span>🍜</span><span>❤️</span>
+          </div>
+          <p><strong>Made with love</strong><br>For people who love good food.</p>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1400&q=85"
+            alt="Fresh pasta with tomatoes and herbs"
+            class="hero-image">
+          <div class="image-overlay"></div>
+        </div>
+
+        <div class="floating-card">
+          <span class="floating-icon">✦</span>
+          <div>
+            <strong>Fresh & Delicious</strong>
+            <p>Every bite tells a story.</p>
+          </div>
+        </div>
+
+        <div class="hero-sticker">MADE FRESH<br>EVERY DAY</div>
+      </div>
+
+      <div class="hero-bottom container">
+        <span>01 / 03</span>
+        <span class="scroll-indicator">SCROLL TO DISCOVER <span>↓</span></span>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits section-padding">
+      <div class="container benefits-grid">
+        <div class="benefit-item reveal">
+          <span class="benefit-icon">✿</span>
+          <div><h3>Fresh Ingredients</h3><p>Quality in every bite.</p></div>
+        </div>
+        <div class="benefit-item reveal">
+          <span class="benefit-icon">♡</span>
+          <div><h3>Made with Love</h3><p>Prepared with care.</p></div>
+        </div>
+        <div class="benefit-item reveal">
+          <span class="benefit-icon">✧</span>
+          <div><h3>Bold Flavors</h3><p>Memorable food moments.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-line"></span> OUR FAVORITES</span>
+            <h2>A little taste of <span>happiness.</span></h2>
+            <p>Discover something delicious for every craving.</p>
+          </div>
+          <a href="#contact" class="text-link">Have a question? <span>↗</span></a>
+        </div>
+
+        <div class="filter-bar reveal" aria-label="Filter menu items">
+          <button class="filter-btn active" data-filter="all">All Dishes</button>
+          <button class="filter-btn" data-filter="local">Local Favorites</button>
+          <button class="filter-btn" data-filter="main">Main Dishes</button>
+          <button class="filter-btn" data-filter="dessert">Desserts</button>
+        </div>
+
+        <div class="food-grid">
+          <article class="food-card reveal" data-category="local">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?auto=format&fit=crop&w=800&q=80"
+                alt="Traditional Asian curry">
+              <span class="food-tag">LOCAL FAVORITE</span>
+              <button class="heart-btn" aria-label="Favorite Amok Curry">♡</button>
+            </div>
+            <div class="food-info">
+              <div><span class="food-number">01 / SIGNATURE</span><h3>Amok Curry</h3></div>
+              <button class="food-arrow" data-food="Amok Curry" aria-label="Order Amok Curry">↗</button>
+            </div>
+            <p class="food-description">Creamy coconut curry inspired by Cambodian flavors.</p>
+          </article>
+
+          <article class="food-card reveal" data-category="main">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80"
+                alt="Grilled salmon with vegetables">
+              <span class="food-tag">CHEF'S PICK</span>
+              <button class="heart-btn" aria-label="Favorite Grilled Salmon">♡</button>
+            </div>
+            <div class="food-info">
+              <div><span class="food-number">02 / MAIN DISH</span><h3>Grilled Salmon</h3></div>
+              <button class="food-arrow" data-food="Grilled Salmon" aria-label="Order Grilled Salmon">↗</button>
+            </div>
+            <p class="food-description">Tender grilled salmon with fresh seasonal vegetables.</p>
+          </article>
+
+          <article class="food-card reveal" data-category="dessert">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80"
+                alt="Rich chocolate dessert">
+              <span class="food-tag">SWEET MOMENT</span>
+              <button class="heart-btn" aria-label="Favorite Chocolate Dessert">♡</button>
+            </div>
+            <div class="food-info">
+              <div><span class="food-number">03 / DESSERT</span><h3>Chocolate Bliss</h3></div>
+              <button class="food-arrow" data-food="Chocolate Bliss" aria-label="Order Chocolate Bliss">↗</button>
+            </div>
+            <p class="food-description">A rich chocolate treat for your sweetest moments.</p>
+          </article>
+
+          <article class="food-card reveal" data-category="main">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                alt="Fresh healthy salad">
+              <span class="food-tag">FRESH PICK</span>
+              <button class="heart-btn" aria-label="Favorite Fresh Salad">♡</button>
+            </div>
+            <div class="food-info">
+              <div><span class="food-number">04 / LIGHT MEAL</span><h3>Garden Salad</h3></div>
+              <button class="food-arrow" data-food="Garden Salad" aria-label="Order Garden Salad">↗</button>
+            </div>
+            <p class="food-description">Crisp greens and colorful vegetables with fresh dressing.</p>
+          </article>
+
+          <article class="food-card reveal" data-category="local">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                alt="Freshly baked pizza">
+              <span class="food-tag">CROWD FAVORITE</span>
+              <button class="heart-btn" aria-label="Favorite Pizza">♡</button>
+            </div>
+            <div class="food-info">
+              <div><span class="food-number">05 / SHARE & ENJOY</span><h3>Classic Pizza</h3></div>
+              <button class="food-arrow" data-food="Classic Pizza" aria-label="Order Classic Pizza">↗</button>
+            </div>
+            <p class="food-description">Golden crust, delicious toppings, and melted cheese.</p>
+          </article>
+
+          <article class="food-card reveal" data-category="dessert">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
+                alt="Fresh fruit and yogurt dessert">
+              <span class="food-tag">SWEET & FRESH</span>
+              <button class="heart-btn" aria-label="Favorite Fruit Dessert">♡</button>
+            </div>
+            <div class="food-info">
+              <div><span class="food-number">06 / DESSERT</span><h3>Fruit Delight</h3></div>
+              <button class="food-arrow" data-food="Fruit Delight" aria-label="Order Fruit Delight">↗</button>
+            </div>
+            <p class="food-description">A refreshing, colorful finish to a wonderful meal.</p>
+          </article>
+        </div>
+
+        <p class="menu-footnote reveal">A good meal is always a good idea. <span>✳</span></p>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story-section section-padding" id="story">
+      <div class="container story-grid">
+        <div class="story-visual reveal">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1100&q=85"
+            alt="A warm and welcoming kitchen">
+          <div class="story-badge"><span>✳</span><br>GOOD FOOD<br>GOOD PEOPLE</div>
+        </div>
+
+        <div class="story-content reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT US</span>
+          <h2>Food brings us<br><span>closer together.</span></h2>
+          <p>
+            We believe food is more than something on a plate.
+            It's a reason to gather, a way to share love, and a
+            chance to make everyday moments special.
+          </p>
+          <p>
+            From fresh ingredients to thoughtful preparation,
+            every detail matters. Pull up a chair and make
+            yourself at home.
+          </p>
+          <a href="#contact" class="btn btn-primary">Let's Connect <span>↗</span></a>
+          <div class="story-signature">Made with love, always <span>♡</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section" id="contact">
+      <div class="cta-decoration">✳</div>
+      <div class="container cta-content reveal">
+        <span class="eyebrow">YOUR NEXT FAVORITE MEAL</span>
+        <h2>Good things happen<br>around the <span>table.</span></h2>
+        <p>Have a question or want to know more about our food?</p>
+        <a href="mailto:hello@savoria.example" class="btn btn-light">Say Hello <span>↗</span></a>
+        <p class="demo-note">Demo website · Replace this email with your real contact.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <a href="#home" class="logo footer-logo">
+        <span class="logo-icon">✳</span> SAVORIA<span class="logo-dot">.</span>
+      </a>
+      <p>Good food. Great mood. Always.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> SAVORIA. All rights reserved.</span>
+      <span>Designed with <span class="love">♥</span> for food lovers.</span>
+    </div>
+  </footer>
+
+  <!-- ORDER DIALOG -->
+  <dialog class="order-dialog" id="orderDialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close dialog">×</button>
+    <span class="eyebrow">A DELICIOUS CHOICE</span>
+    <h2 id="dialogTitle">Ready to order?</h2>
+    <p>This is a demo website. Online ordering has not been connected yet.</p>
+    <button class="btn btn-primary" id="dialogOk">Got it <span>✓</span></button>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
